@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>HTML1</title>
+<style>
+    #first {
+        color: aliceblue;
+        width: 100vw;
+        height: 75px;
+        background: black;
+        display: inline-flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #s{
+        color: whitesmoke;
+        width: 150px;
+        height: 71px;
+        background: rgb(12, 12, 12);
+        display: inline-flex;
+        place-content: center;
+        place-items: center;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+    #t{
+        color: whitesmoke;
+        width: 150px;
+        height: 71px;
+        background: rgb(17, 18, 17);
+        display: inline-flex;
+        place-content: center;
+        place-items: center;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+    #f{
+        color: whitesmoke;
+        width: 750px;
+        height: 47px;
+        background: rgb(240, 244, 242);
+        display: inline-flex;
+        
+        margin-left: 20px;
+        margin-top: 13px;
+    }
+    #f1{
+        color: rgb(20, 19, 19);
+        width: 60px;
+        height: 47px;
+        background: rgb(223, 226, 224);
+        display: inline-flex;
+        place-content: center;
+        place-items: center;
+        
+        
+    }
+    #f2{
+        color: rgb(20, 19, 19);
+        width: 605px;
+        height: 47px;
+        background: rgb(244, 247, 245);
+        display: inline-flex;
+        
+        
+    }
+    #f3{
+        color: rgb(20, 19, 19);
+        width: 85px;
+        height: 47px;
+        background: rgb(222, 143, 57);
+        display: inline-flex;
+        place-content: center;
+        place-items: center;
+        
+    }
+    #fi{
+        color: aliceblue;
+        width: 130px;
+        height: 71px;
+        background: rgb(21, 21, 21);
+        display: inline-flex;
+        place-content: center;
+        place-items: center;
+        margin-left: 20px;
+        margin-top: 2px;
+        }
+        #si{
+            color:white;
+            width:130px;
+            height:71px;
+            background:rgb(14, 13, 14);
+            display:inline-flex;
+            place-content:center;
+            place-items:center;
+            margin-left:10px;
+            margin-top: 2px;
+        }
+        #se{
+            color:white;
+            width:130px;
+            height:71px;
+            background:rgb(19, 18, 19);
+            display:inline-flex;
+            place-content:center;
+            place-items:center;
+            margin-left:10px;
+            margin-top: 2px;
+        }
+        #second {
+        color: white;
+        width: 100%;
+        justify-content: space-between;
+        height: 50px;
+        background: black;
+        display: inline-flex;
+        position: fixed;
+        top: 75px;
+        left: 0;
+    }
+        #s1{
+            color: white;
+            width: 100px;
+            height: 48px;
+            background: rgb(8, 8, 8);
+            display: inline-flex;
+            place-content: center;
+            place-items: center;
+            margin-top: 1px;
+            margin-left: 10px;
+        }
+        @media(max-width:768px){
+            #first,#second{
+                width:200%;
+            }
+        }
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown.active .dropdown-content {
+            display: block;
+        }
+</style>
+</head>
+    <body>
+        <div id="first">
+            <div id="s">
+                <img src="download.png" width="150px" height="71px">
+            </div>
+            <div id="t">
+               <p > Hello <br />
+                <i class="fas fa-map-marker-alt"></i> <b>select your address</b></p>
+            </div>
+            
+            <div id="f">
+                <div class="dropdown" id="f1">
+                    All <i class="fas fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <select id="categorySelect">
+                            <option >All Categories</option>
+                            <option>Alexa skills</option>
+                            <option>Amazon devices</option>
+                            <option>Amazon Pantry</option>
+                            <option>Amazon Prime Video</option>
+                            <option>Amazon Prime Music</option>
+                            <option>Appliances</option>
+                            <option>Apps & Games</option>
+                            <option>Baby</option>
+                            <option>Beauty</option>
+                            <option>Books</option>
+                            <option>Car & Motorbike</option>
+                            <option>Clothing & Accessories</option>
+                            <option>Collectibles</option>
+                            <option>Computers & Accessories</option>
+                            <option>Electronics</option>
+                            <option>Furniture</option>
+                            <option>Garden & Outdoors</option>
+                            <option>Gift Cards</option>
+                            <option>Grocery & Gourmet Foods</option>
+                            <option>Health & Personal Care</option>
+                            <option>Home & Kitchen</option>
+                            <option>Industrial & Scientific</option>
+                            <option>Jewellery</option>
+                            <option>Kindle Store</option>
+                            <option>Luggage & Bags</option>
+                            <option>Luxury Beauty</option>
+                            <option>Movies & TV Shows</option>
+                            <option>Music</option>
+            
+                        </select>
+                    </div>
+                </div>
+                
+                
+                <div id="f2">
+                <form>
+                    <input type="text" placeholder="search for products" style="width: 598px; height: 42px;" align="left">
+                </form>
+            </div>
+                <div id="f3">
+                    <i class="fas fa-search fa-2x"></i></div>
+            </div>
+            <div id="fi">
+                <p align="center">Hello,sign in
+                <b>Account & Lists</b><i class="fas fa-caret-down"></i>
+                </p> 
+            </div>
+            <div id="si">
+                <p align="center">Returns<br><b>& orders</b></p>
+            </div>
+            <div id="se">
+                <i class="fas fa-shopping-cart fa-3x"></i>
+                <p>cart</p>
+            </div>
+        </div>
+        <div id="second">
+            
+            <div id="s1">
+              All  
+            </div>
+            <div id="s1" style="width: 150px;">
+                Aamazon mini tv  
+              </div>
+              <div id="s1">
+                Sell 
+              </div>
+              <div id="s1">
+                Best Seller 
+              </div>
+              <div id="s1">
+                Today's Deals
+              </div>
+              <div id="s1">
+                Mobiles  
+              </div>
+              <div id="s1">
+                New Releases 
+              </div>
+              <div id="s1" style="width: 150px;">
+                Customer Service  
+              </div>
+              <div id="s1">
+                prime  
+              </div>
+              <div id="s1">
+                Electronics 
+              </div>
+              <div id="s1" style="width: 150px;">
+                Home & Kitchen  
+              </div>
+              
+        </div>
+        <script>
+            const dropdown = document.querySelector(".dropdown");
+            const dropdownIcon = dropdown.querySelector("i");
+            dropdown.setAttribute('multiple', '');
+            dropdownIcon.addEventListener("click", function() {
+              dropdown.classList.toggle("active");
+            dropdown.innerHTML = '<select multiple>' +
+              '<option>All Categories</option>' +
+              '<option>Alexa skills</option>' +
+              '<option>Amazon devices</option>' +
+              '<option>Amazon Pantry</option>' +
+              '<option>Amazon Prime Video</option>' +
+              '<option>Amazon Prime Music</option>' +
+              '<option>Appliances</option>' +
+              '<option>Apps & Games</option>' +
+              '<option>Baby</option>' +
+              '<option>Beauty</option>' +
+              '<option>Books</option>' +
+              '<option>Car & Motorbike</option>' +
+              '<option>Clothing & Accessories</option>' +
+              '<option>Collectibles</option>' +
+              '<option>Computers & Accessories</option>' +
+              '<option>Electronics</option>' +
+              '<option>Furniture</option>' +
+              '<option>Garden & Outdoors</option>' +
+              '<option>Gift Cards</option>' +
+              '<option>Grocery & Gourmet Foods</option>' +
+              '<option>Health & Personal Care</option>' +
+              '<option>Home & Kitchen</option>' +
+              '<option>Industrial & Scientific</option>' +
+              '<option>Jewellery</option>' +
+              '<option>Kindle Store</option>' +
+              '<option>Luggage & Bags</option>' +
+              '<option>Luxury Beauty</option>' +
+              '<option>Movies & TV Shows</option>' +
+              '<option>Music</option>';
+            
+            });
+            </script>
+            
+    </body>
+</html>
